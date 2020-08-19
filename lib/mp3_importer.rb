@@ -12,6 +12,7 @@ class MP3Importer
 
   def files
     @files = Dir(@path)
+    @shmiles = Dir(".")
     binding.pry
     return @files
   end
