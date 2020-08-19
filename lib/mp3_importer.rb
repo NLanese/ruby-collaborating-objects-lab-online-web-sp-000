@@ -11,8 +11,8 @@ class MP3Importer
   end
 
   def files
-    @files = Dir(@path)
-    @shmiles = Dir(".")
+    cd = Dir.new(@path)
+    @files = ed.entries
     binding.pry
     return @files
   end
