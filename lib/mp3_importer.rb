@@ -13,7 +13,7 @@ class MP3Importer
   def files
     cd = Dir.new(@path)
     @files = cd.entries
-    binding.pry
+  #  binding.pry
     return @files
   end
 
