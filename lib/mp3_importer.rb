@@ -12,7 +12,12 @@ class MP3Importer
 
   def files
     cd = Dir.new(@path)
-    @files = cd.entries
+    allFiles = cd.entries
+    allFiles.each do | selectedFile |
+      if (selectedFile.include?(".mp3"))
+        @files << selectedFile
+      end
+    end
   #  binding.pry
     return @files
   end
