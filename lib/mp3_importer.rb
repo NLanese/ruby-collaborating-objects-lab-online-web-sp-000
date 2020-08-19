@@ -1,7 +1,5 @@
 class MP3Importer
 
-  @@files = []
-
   def initialize(inputPath)
     @path = inputPath
     @@files << self
@@ -9,6 +7,11 @@ class MP3Importer
 
   def path
     @path
+  end
+
+  def files
+    @files = Dir["."]
+    return @files
   end
 
 
