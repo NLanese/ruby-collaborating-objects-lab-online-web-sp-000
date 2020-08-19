@@ -23,8 +23,8 @@ class MP3Importer
     return @files
   end
 
-
-
-
-
+  def import
+    
+  end
+  
 end
