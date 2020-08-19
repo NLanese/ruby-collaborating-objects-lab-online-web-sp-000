@@ -1,7 +1,7 @@
+require 'pry'
+
 class MP3Importer
-
-
-
+  
   def initialize(inputPath)
     @path = inputPath
   end
@@ -12,6 +12,7 @@ class MP3Importer
 
   def files
     @files = Dir["."]
+    binding.pry
     return @files
   end
 
