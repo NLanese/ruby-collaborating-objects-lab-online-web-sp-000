@@ -24,7 +24,7 @@ class MP3Importer
   end
 
   def import
-    binding.pry
+    self.files
     @files.each do | mp3 |
       Song.new_by_filename(mp3)
     end
