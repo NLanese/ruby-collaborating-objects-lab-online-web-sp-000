@@ -1,7 +1,7 @@
 require 'pry'
 
 class MP3Importer
-  
+
   def initialize(inputPath)
     @path = inputPath
   end
